@@ -24,3 +24,12 @@ grep -E '[[:digit:]]{4,6}.$' $E
 
 # #으로 라인이 시작되고, 공백 라인 제거
 cat $E | grep -v '^#' | grep -v '^$'
+
+# .으로 끝나는 단어가 있는 라인
+grep '\.\b' $E
+
+# .가 있는 라인
+ip address show | grep '\.'
+
+# .으로 끝나는 라인
+grep '\.\B' $E
