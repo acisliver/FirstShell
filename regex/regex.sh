@@ -33,3 +33,9 @@ ip address show | grep '\.'
 
 # .으로 끝나는 라인
 grep '\.\B' $E
+
+# C로 시작하는 단어가 있는 라인
+grep '\<C' $E
+
+# n으로 끝나는 단어가 있는 라인
+grep 'n\>' $E
