@@ -39,3 +39,9 @@ grep '\<C' $E
 
 # n으로 끝나는 단어가 있는 라인
 grep 'n\>' $E
+
+# 특수 문자가 포함된 라인. expression과 This 사이에는 Tab 문자가 있음
+grep '[[:cntrl:]]' $E
+
+# 아스키 코드가 있는 모든 라인
+grep '[[:graph:]]' $E | head -n 10
