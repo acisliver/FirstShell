@@ -45,3 +45,6 @@ grep '[[:cntrl:]]' $E
 
 # 아스키 코드가 있는 모든 라인
 grep '[[:graph:]]' $E | head -n 10
+
+# 스페이스를 포함한 아스키 코드가 있는 모든 라인
+grep '[[:print:]]' $E | head -n 10
