@@ -14,3 +14,7 @@ grep -F '# Date
 # -G
 # 기본 정규 표현식 사용(기본값)
 grep -G '[[:lower:]]*\??' expression.txt
+
+# -P
+# Perl 정규표현식
+grep -P "(?<=\[')[^,]*" /etc/nova/nova.conf
