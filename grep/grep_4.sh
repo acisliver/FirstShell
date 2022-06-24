@@ -10,3 +10,7 @@ grep -e 'mail' --regexp 'phone' expression.txt
 echo 'mail' > file1.txt
 echo 'phone' > file2.txt
 grep -f file1.txt --file=file2.txt expression.txt
+
+# -i, --ignore-case 옵션
+# 대소문자 구문 X
+grep -i 'expression' expression.txt
