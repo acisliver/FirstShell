@@ -14,3 +14,7 @@ grep -f file1.txt --file=file2.txt expression.txt
 # -i, --ignore-case 옵션
 # 대소문자 구문 X
 grep -i 'expression' expression.txt
+
+# -v, --invert-match 옵션
+# 패턴을 제외한 라인만 grep
+cat expression.txt | grep -v '^#' | grep -v '^$'
