@@ -18,3 +18,8 @@ grep -i 'expression' expression.txt
 # -v, --invert-match 옵션
 # 패턴을 제외한 라인만 grep
 cat expression.txt | grep -v '^#' | grep -v '^$'
+
+# -w, --word-regexp 옵션
+# 검색하고자하는 패턴과 완벽히 일치하는 단어가 있는 라인
+grep 'expression' expression.txt
+grep -w 'expression' expression.txt
