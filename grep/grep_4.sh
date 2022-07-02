@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 # 매칭 제어 관련 옵션
 # -e 패턴, --regexp= 패턴 옵션
@@ -23,3 +23,7 @@ cat expression.txt | grep -v '^#' | grep -v '^$'
 # 검색하고자하는 패턴과 완벽히 일치하는 단어가 있는 라인
 grep 'expression' expression.txt
 grep -w 'expression' expression.txt
+
+# -x, --line-regexp 옵션
+# 검색하고자하는 패턴과 라인이 일치
+grep -x '# Help' expression.txt
