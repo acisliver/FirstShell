@@ -27,3 +27,7 @@ grep -w 'expression' expression.txt
 # -x, --line-regexp 옵션
 # 검색하고자하는 패턴과 라인이 일치
 grep -x '# Help' expression.txt
+
+# -y 옵션
+# 대소문자 구분 X
+grep -y 'expression' expression.txt
