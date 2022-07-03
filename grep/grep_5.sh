@@ -6,3 +6,7 @@
 # -c, --count
 # 패턴과 일치하는 단어의 개수 세기
 grep -c 'expression' expression.txt
+
+# --color 옵션
+# 패턴과 일치하는 패턴 다른 색으로 설정
+GREP_COLOR="1;32" grep --color 'expression' expression.txt
