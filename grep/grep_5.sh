@@ -22,3 +22,7 @@ grep -l 'express' ./*
 # -m 라인수, --max-count=라인 수 옵션
 # 패턴을 검색한 결과가 여러 줄일 경우 특정 라인 수만큼만 출력
 grep -m 5 "^\[[[:lower:]]*\]" /etc/nova/nova.conf
+
+# -o, --only-matching 옵션
+# 패턴과 일치하는 단어만 출력
+grep -o 'express[[:lower:]]*' expression.txt
