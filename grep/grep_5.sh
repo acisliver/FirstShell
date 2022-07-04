@@ -14,3 +14,7 @@ GREP_COLOR="1;32" grep --color 'expression' expression.txt
 # -L, --files-without-match
 # 패턴이 존재하지 않는 파일 목록 조회
 grep -L 'express' ./*
+
+# -l, --files-with-match
+# 패턴이 존재하는 파일 목록 조회
+grep -l 'express' ./*
