@@ -10,3 +10,7 @@ grep -c 'expression' expression.txt
 # --color 옵션
 # 패턴과 일치하는 패턴 다른 색으로 설정
 GREP_COLOR="1;32" grep --color 'expression' expression.txt
+
+# -L, --files-without-match
+# 패턴이 존재하지 않는 파일 목록 조회
+grep -L 'express' ./*
