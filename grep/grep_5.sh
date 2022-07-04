@@ -18,3 +18,7 @@ grep -L 'express' ./*
 # -l, --files-with-match
 # 패턴이 존재하는 파일 목록 조회
 grep -l 'express' ./*
+
+# -m 라인수, --max-count=라인 수 옵션
+# 패턴을 검색한 결과가 여러 줄일 경우 특정 라인 수만큼만 출력
+grep -m 5 "^\[[[:lower:]]*\]" /etc/nova/nova.conf
