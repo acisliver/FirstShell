@@ -37,3 +37,7 @@ then
 else
 	echo pattern not found
 fi
+
+# -s, --no-messages 옵션
+# 에러메세지를 보여주지 않음
+grep -s 'help' express.txt
