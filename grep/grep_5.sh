@@ -26,3 +26,14 @@ grep -m 5 "^\[[[:lower:]]*\]" /etc/nova/nova.conf
 # -o, --only-matching 옵션
 # 패턴과 일치하는 단어만 출력
 grep -o 'express[[:lower:]]*' expression.txt
+
+# -q, --quite, --silent 옵션
+# 검색 결과를 보여주지 않음
+# 패턴이 존재하는지 확인할 때 사용
+# 있다면 종료 상태 0
+if grep -q 'help' expression.txt
+then
+	echo pattern found
+else
+	echo pattern not found
+fi
