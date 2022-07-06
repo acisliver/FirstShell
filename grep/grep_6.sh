@@ -11,3 +11,7 @@ grep -b 'express' expression.txt
 # 하지만 특정 파일을 대상으로 검색시에는 파일명을 보여주지 않음
 # 하지만 -H 옵션을 붙이면 파일명을 보여줌
 grep -H 'express' expression.txt
+
+# -h, --no-filename
+# 반대로 전체파일을 대상으로 검색하여도 파일명을 보여주지 않음
+grep -h 'express' ./*
