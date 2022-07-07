@@ -24,3 +24,7 @@ ls -l | grep --label=file -H express
 # -n, --line-number
 # 검색된 라인의 라인 번호를 붙여준다
 grep -n 'question' expression.txt
+
+# -u, --unix-byte=offsets
+# 유닉스 스타일의 바이트 수를 보여줌
+grep -u -b 'question' expression.txt
