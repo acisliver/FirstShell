@@ -28,3 +28,8 @@ grep -n 'question' expression.txt
 # -u, --unix-byte=offsets
 # 유닉스 스타일의 바이트 수를 보여줌
 grep -u -b 'question' expression.txt
+
+# -Z, --null
+# 파일 목록을 검색할 때 여러 줄로 검색된 파일 목록의 뉴라인을 제거해 한 줄로 출력
+cp expression.txt test.txt
+grep -Z -l 'express' ./*
