@@ -20,3 +20,7 @@ grep -h 'express' ./*
 # 검색한 파일 정보 앞에 라벨을 붙여줄 경우
 # 검색 대상 자체가 파일이여야 해서 ls와 파이프라인 사용
 ls -l | grep --label=file -H express
+
+# -n, --line-number
+# 검색된 라인의 라인 번호를 붙여준다
+grep -n 'question' expression.txt
