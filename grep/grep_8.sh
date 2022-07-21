@@ -13,3 +13,7 @@ grep -a "^Content" grep_binary_test
 grep --binary-files=binary '^Context' grep_binary_test
 # 바이너리 파일이 text일 때 패턴이 포함된 라인을 보여줌
 grep --binary-files=text '^Context' grep_binary_test
+
+# -D ACTION, --devices=ACTION
+# 디파이스 파일을 검색하려 시도할 경우 스킵 가능
+sudo grep -D skip 'loop' /dev/mem
