@@ -17,3 +17,8 @@ grep --binary-files=text '^Context' grep_binary_test
 # -D ACTION, --devices=ACTION
 # 디파이스 파일을 검색하려 시도할 경우 스킵 가능
 sudo grep -D skip 'loop' /dev/mem
+
+# --exclude = GLOB
+# GLOB에 해당되는 파일은 검색에서 제외된다.
+# express로 시작하는 파일 제회
+grep --exclude=express* 'CPU' ./*
