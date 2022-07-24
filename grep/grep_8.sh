@@ -22,3 +22,7 @@ sudo grep -D skip 'loop' /dev/mem
 # GLOB에 해당되는 파일은 검색에서 제외된다.
 # express로 시작하는 파일 제회
 grep --exclude=express* 'CPU' ./*
+
+# --exclude-from = FILE
+# 파일 자체를 검색 대상에서 제외
+grep --exclude-from=expression.tar.gz 'CPU' ./*
