@@ -26,3 +26,8 @@ grep --exclude=express* 'CPU' ./*
 # --exclude-from = FILE
 # 파일 자체를 검색 대상에서 제외
 grep --exclude-from=expression.tar.gz 'CPU' ./*
+
+# --exclude-dir = DIR
+# 디렉터리를 검색 대상에서 제회
+# r옵션을 통해 디렉터리 하위도 탐색
+grep -r --exclude-dir=file-dir 'mail' ./*
